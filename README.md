@@ -6,5 +6,6 @@
 <li> Animals </li> 
 <li> Stages of life </li> 
 <li> Classes Restaurant </li>
+ <li> User's login (Classes) </li>
 </ol>
  
