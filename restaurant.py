@@ -21,6 +21,7 @@ class Restaurant():
     self.number_served += totalserved
 
 class IceCreamStand(Restaurant):
+    """  Child class """
   def __init__(self, name, cuisine_type): 
     super().__init__(name, cuisine_type)
 
