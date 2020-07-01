@@ -1,3 +1,4 @@
+
 class User(): 
   """Information about user's login"""
 
@@ -26,6 +27,38 @@ class User():
     self.login_attempts = 0
     print("Your login attempts have been reset. You have now: " + str(self.login_attempts) + " login attempts")
 
+
+
+
+class Admin(User):
+  def __init__(self, first_name, last_name):
+    super().__init__(first_name, last_name)  
+    self.privileges = Privileges()
+    
+
+class Privileges(): 
+  def __init__(self, privileges=[]): 
+    self.privileges_list = privileges
+
+    
+  def show_privileges(self):
+    if self.privileges_list == [] :
+      print("You don't have privileges yet")
+
+    print("These are your priviliges: ")
+    for privilege in self.privileges_list: 
+      print("-" + privilege)
+
+
+
+admin1= Admin('Antonia', 'Reclif')
+admin1.describe_user()
+admin1.privileges.show_privileges()
+
+print("Adding privileges... ")
+admin1_privileges = ['can add post', 'can delete post', 'can ban user']
+admin1.privileges.privileges_list = admin1_privileges
+admin1.privileges.show_privileges()
 
 user_1 = User('Matias', 'Cowell')
 user_1.describe_user()
