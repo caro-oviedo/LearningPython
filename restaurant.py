@@ -1,7 +1,7 @@
 class Restaurant(): 
 
   def __init__(self, name, cuisine_type): 
-    self.name = name 
+    self.name = name.title() 
     self.cuisine_type = cuisine_type
     self.number_served = 0
 
@@ -22,7 +22,7 @@ class Restaurant():
 
 class IceCreamStand(Restaurant):
     """  Child class """
-  def __init__(self, name, cuisine_type): 
+  def __init__(self, name, cuisine_type='ice_cream'): 
     super().__init__(name, cuisine_type)
 
     self.flavors = ['chocolate', 'vanilla', 'almond']
@@ -30,9 +30,9 @@ class IceCreamStand(Restaurant):
   def display_flavors(self):
     print("\nThese are our icecream flavours: ")
     for flavor in self.flavors: 
-      print(flavor)
+      print("-" + flavor.title())
     
-ice_cream1 = IceCreamStand('Iceland', 'italian')
+ice_cream1 = IceCreamStand('Iceland')
 ice_cream1.describe_restaurant()
 ice_cream1.display_flavors()
 
