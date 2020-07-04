@@ -60,7 +60,7 @@ admin1_privileges = ['can add post', 'can delete post', 'can ban user']
 admin1.privileges.privileges_list = admin1_privileges
 admin1.privileges.show_privileges()
 
-user_1 = User('Matias', 'Cowell')
+user_1 = User('Mathias', 'Bradley')
 user_1.describe_user()
 user_1.greet_user()
 print(user_1.login_attempts)
