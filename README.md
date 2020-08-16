@@ -1,4 +1,4 @@
-## Python 
+## Python <sup>[1](#myfootnote1)</sup>
 
 <ol> 
 <li> Slices </li>
@@ -10,3 +10,5 @@
 <li> User's login (Classes) </li>
 <li> Cars </li>
 </ol>
+
+<a name="myfootnote1">1</a>: Footnote content goes here
